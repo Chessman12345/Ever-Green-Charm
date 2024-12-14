@@ -1,0 +1,46 @@
+body {
+  padding: 40px 0 20px 0;
+  margin: 0;
+  /* background-color: #6f1c13; */
+  background-color: #69231b;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(/fonts/ofont.ru_Nunito.ttf);
+}
+
+@font-face {
+  font-family: 'Hero';
+  src: url(/fonts/ofont.ru_Hero.ttf);
+}
+
+@font-face {
+  font-family: 'HeroR';
+  src: url(/fonts/ofont.ru_HeroRegular.ttf);
+}
+
+@font-face {
+  font-family: 'Giger';
+  src: url(/fonts/Giger.ttf);
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url(/fonts/ofont.ru_Proxima.ttf);
+}
+
+@font-face {
+  font-family: 'Ramona';
+  src: url(/fonts/ofont.ru_Ramona.ttf);
+}
+
+@font-face {
+  font-family: 'Patsy';
+  src: url(/fonts/ofont.ru_Patsy\ Sans.otf);
+}
