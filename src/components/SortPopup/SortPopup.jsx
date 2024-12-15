@@ -12,7 +12,7 @@ function SortPopup({ items }) {
   };
 
   const windowOutsideClouse = (e) => {
-    console.log(e);
+    // console.log(e);
   };
 
   React.useEffect(() => {
