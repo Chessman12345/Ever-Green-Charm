@@ -4,7 +4,15 @@ import PropTypes from "prop-types";
 import RenderProduct from "../RenderProduct/RenderProduct";
 import "./ProductCart.css";
 
-function ProductCart({ id, imageUrl, name, price, sizes, AddBacket }) {
+function ProductCart({
+  id,
+  imageUrl,
+  name,
+  price,
+  sizes,
+  AddBacket,
+  backetCount,
+}) {
   const [activeItem, setActiveItem] = React.useState(0);
 
   const onSelectItem = (index) => {
@@ -51,7 +59,9 @@ function ProductCart({ id, imageUrl, name, price, sizes, AddBacket }) {
           onClick={ClickAddBacket}
           className="button button--outline button--add"
         >
-          <span className="button--add-text">Добавить</span>
+          <span className="button--add-text">
+            Добавить <span>{backetCount}</span>
+          </span>
         </button>
       </div>
     </div>
@@ -64,6 +74,7 @@ ProductCart.propTypes = {
   price: PropTypes.number,
   sizes: PropTypes.arrayOf(PropTypes.number),
   AddBacket: PropTypes.func,
+  backetCount: PropTypes.number,
 };
 
 ProductCart.defaultProps = {

@@ -9,6 +9,7 @@ import "./Content.css";
 function Content({ items }) {
   const dispatch = useDispatch();
   const isRender = useSelector(({ product }) => product.isRender);
+  const backetItems = useSelector(({ backet }) => backet.items);
 
   const addProductToBacket = (obj) => {
     dispatch({
@@ -29,8 +30,10 @@ function Content({ items }) {
                 <ProductCart
                   AddBacket={addProductToBacket}
                   key={item.id}
+                  backetCount={
+                    backetItems[item.id] && backetItems[item.id].items.length
+                  }
                   {...item}
-                  isRender={true}
                 />
               ))
             : Array(24)
