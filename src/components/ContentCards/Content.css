@@ -1,0 +1,21 @@
+.content {
+    width: 100%;
+}
+
+.container {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.content__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+    gap: 17px;
+
+}
+
+.content__title h1 {
+    font-family: "Nunito";
+}

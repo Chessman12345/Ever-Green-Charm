@@ -1,0 +1,90 @@
+.product-block {
+    width: 290px;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+ul {
+    display: flex;
+    flex: 1;
+}
+
+ul:first-of-type {
+    margin-bottom: 6px;
+}
+
+.product-block__selector {
+    display: flex;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 6px;
+}
+
+.product-block__title {
+    font-family: "Nunito";
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1%;
+    margin-bottom: 20px;
+    height: 60px;
+}
+
+.product-block:not(:nth-of-type(4n)) {
+    margin-right: 35px;
+}
+
+.product-block__image {
+    height: 190px;
+    padding: 0;
+    margin: 0;
+}
+
+.product-block__image img {
+    border-radius: 20px;
+}
+
+.product-block__selector--item {
+    padding: 8px;
+    flex: 1;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.product-block__selector--item.active {
+    background: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    color: grey;
+    cursor: auto;
+}
+
+.product-block__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.product-block__price {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.015em;
+}
+
+.product-block__price-text {
+    font-family: "Nunito";
+}
+
+.button--add {
+    color: #69231b;
+    border: 1px solid #69231b;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+.button--add-text {
+    font-family: "Nunito";
+}

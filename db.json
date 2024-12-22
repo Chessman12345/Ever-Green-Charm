@@ -1,0 +1,185 @@
+{
+  "Products": [
+    {
+      "id": 0,
+      "imageUrl": "https://1001elka.by/image/cache/webp/import_files/f9/f93ef3df3d6811ecab688e12ae996295_f93ef3e03d6811ecab688e12ae996295-220x200.webp",
+      "name": "Елка искусственная Chloya заснеженная",
+      "sizes": [150, 180, 210],
+      "price": 420,
+      "category": 0
+    },
+    {
+      "id": 1,
+      "imageUrl": "https://1001elka.by/image/cache/webp/import_files/8c/8ce4989f3d6611ecab688e12ae996295_9be6c8fc3d6611ecab688e12ae996295-220x200.webp",
+      "name": "Елка искусственная Dominika",
+      "sizes": [150, 180, 210],
+
+      "price": 430,
+      "category": 0
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://1001elka.by/image/cache/webp/import_files/be/be2bc3273d6911ecab688e12ae996295_be2bc3283d6911ecab688e12ae996295-220x200.webp",
+      "name": "Елка искусственная Paula",
+      "sizes": [150, 180, 210],
+
+      "price": 375,
+      "category": 0
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://1001elka.by/image/cache/webp/import_files/e8/e8ad066af38311ebab588e12ae996295_93179bd2f38411ebab588e12ae996295-220x200.webp",
+      "name": "Ель Ариозо (эффект инея)",
+      "sizes": [150, 180, 210],
+      "price": 480,
+      "category": 0
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://elki.by/upload/resize_cache/webp/iblock/a9b/ggp75c5bz5boajjfpljxs3umlqmospup.webp",
+      "name": "Сосна искусственная Тиффани",
+      "sizes": [150, 180, 210],
+
+      "price": 330,
+      "category": 1
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://elki.by/upload/resize_cache/webp/iblock/0c3/tq2czgo59mhhmq82is6wn97sl9p8dyzk.webp",
+      "name": "Сосна Тиффани натуральная с шишками",
+      "sizes": [150, 180, 210],
+      "price": 570,
+      "category": 1
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://elki.by/upload/resize_cache/webp/iblock/db9/dcicpqqb0s5cm0dxvig7juoseh3oaznr.webp",
+      "name": "Сосна искусственная Юта натуральная с шишками",
+      "sizes": [150, 180, 210],
+
+      "price": 350,
+      "category": 1
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://elki.by/upload/resize_cache/webp/iblock/a83/w6s7sq3q3qnmhgnq9l9axr5bh97fbocq.webp",
+      "name": "Сосна искусственная Хрустальная зеленая",
+      "sizes": [150, 180, 210],
+
+      "price": 210,
+      "category": 1
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://s1-listing.ozstatic.by/200200/450/47/101/101047450_0.jpg",
+      "name": "Елочная игрушка 'Мадельон. Часы'",
+      "sizes": [3, 5, 7],
+      "price": 17,
+      "category": 2
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://s4-listing.ozstatic.by/200200/466/370/101/101370466_0.jpg",
+      "name": "Елочная игрушка 'Новогодняя машина'",
+      "sizes": [3, 5, 7],
+      "price": 30,
+      "category": 2
+    },
+    {
+      "id": 10,
+      "imageUrl": "https://s3-listing.ozstatic.by/200200/25/155/101/101155025_0.jpg",
+      "name": "Елочная игрушка 'Фонарик'",
+      "sizes": [3, 5, 7],
+      "price": 22,
+      "category": 2
+    },
+    {
+      "id": 11,
+      "imageUrl": "https://s4-listing.ozstatic.by/200200/106/171/101/101171106_0.jpg",
+      "name": "Набор ёлочных украшений 'Christmas' (10 шт.)",
+      "sizes": [3, 5, 7],
+      "price": 13,
+      "category": 2
+    },
+    {
+      "id": 12,
+      "imageUrl": "https://s3-listing.ozstatic.by/200200/154/374/101/101374154_0.jpg",
+      "name": "Шар ёлочный 'Сказочный гномик 2'",
+      "sizes": [3, 5, 7],
+      "price": 14,
+      "category": 2
+    },
+    {
+      "id": 13,
+      "imageUrl": "https://s4-listing.ozstatic.by/200200/116/171/101/101171116_0.jpg",
+      "name": "Статуэтка 'Танцующий Снеговик'",
+      "sizes": [12, 24, 36],
+      "price": 10,
+      "category": 3
+    },
+    {
+      "id": 14,
+      "imageUrl": "https://s5-listing.ozstatic.by/200200/418/372/101/101372418_0.jpg",
+      "name": "Статуэтка 'Подарки'",
+      "sizes": [12, 24, 36],
+      "price": 25,
+      "category": 3
+    },
+    {
+      "id": 15,
+      "imageUrl": "https://s4-listing.ozstatic.by/200200/917/372/101/101372917_0.jpg",
+      "name": "Статуэтка 'Солдат на коне'",
+      "sizes": [12, 24, 36],
+      "price": 26,
+      "category": 3
+    },
+    {
+      "id": 16,
+      "imageUrl": "https://s4-listing.ozstatic.by/200200/357/160/101/101160357_0.jpg",
+      "name": "Статуэтка 'Оливер'",
+      "sizes": [12, 24, 36],
+      "price": 45,
+      "category": 3
+    },
+    {
+      "id": 17,
+      "imageUrl": "https://s3-listing.ozstatic.by/200200/504/365/101/101365504_0.jpg",
+      "name": "Статуэтка 'Санта'",
+      "sizes": [12, 24, 36],
+      "price": 7,
+      "category": 3
+    },
+    {
+      "id": 18,
+      "imageUrl": "https://s5-listing.ozstatic.by/200200/238/626/10/10626238_0.jpg",
+      "name": "Подсвечник 'Дом'",
+      "sizes": [5, 7, 9],
+      "price": 27,
+      "category": 4
+    },
+    {
+      "id": 19,
+      "imageUrl": "https://s1-listing.ozstatic.by/200200/940/46/101/101046940_0.jpg",
+      "name": "Подсвечник 'Снеговики'",
+      "sizes": [5, 7, 9],
+      "price": 13,
+      "category": 4
+    },
+    {
+      "id": 20,
+      "imageUrl": "https://s4-listing.ozstatic.by/200200/467/375/101/101375467_0.jpg",
+      "name": "Подсвечник декоративный белый",
+      "sizes": [5, 7, 9],
+      "price": 11,
+      "category": 4
+    },
+    {
+      "id": 21,
+      "imageUrl": "https://s1-goods.ozstatic.by/480/941/155/101/101155941_0_Podsvechnik_Zimniy_dom.jpg",
+      "name": "Подсвечник 'Зимний дом'",
+      "sizes": [5, 7, 9],
+      "price": 23,
+      "category": 4
+    }
+  ]
+}
