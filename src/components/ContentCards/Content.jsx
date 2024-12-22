@@ -1,12 +1,21 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import RenderProduct from "./RenderProduct/RenderProduct";
 import ProductCart from "./ProductCart/ProductCart";
+import { addProduct } from "../../redux/action/backet";
 import "./Content.css";
 
 function Content({ items }) {
+  const dispatch = useDispatch();
   const isRender = useSelector(({ product }) => product.isRender);
+
+  const addProductToBacket = (obj) => {
+    dispatch({
+      type: "ADD_PRODUCT",
+      payload: obj,
+    });
+  };
 
   return (
     <div className="content">
@@ -17,7 +26,12 @@ function Content({ items }) {
         <div className="content__container">
           {isRender
             ? items.map((item) => (
-                <ProductCart key={item.id} {...item} isRender={true} />
+                <ProductCart
+                  AddBacket={addProductToBacket}
+                  key={item.id}
+                  {...item}
+                  isRender={true}
+                />
               ))
             : Array(24)
                 .fill(0)

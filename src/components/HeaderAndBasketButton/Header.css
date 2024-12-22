@@ -40,7 +40,7 @@
     background-color: #842318;
     border-radius: 30px;
     padding: 10px 20px;
-    max-width: 120px;
+    min-width: 130px;
     text-align: center;
     cursor: pointer;
     transition: 0.3s ease-in-out;

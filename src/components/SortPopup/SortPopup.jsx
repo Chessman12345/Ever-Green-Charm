@@ -32,7 +32,7 @@ const SortPopup = React.memo(function SortPopup({
     <div className="sort">
       <div className="sort__label">
         <svg
-          className={visiblePopup ? "rotated" : ""}
+          className={visiblePopup ? "sort--svg rotated" : "sort--svg"}
           width="10"
           height="6"
           viewBox="0 0 10 6"
@@ -44,7 +44,7 @@ const SortPopup = React.memo(function SortPopup({
             fill="#2C2C2C"
           />
         </svg>
-        <b>Сортировка по:</b>
+        <b className="sort--b">Сортировка по:</b>
         <span className="sort__span" onClick={toggleVisiblePopup}>
           {activeType}
         </span>

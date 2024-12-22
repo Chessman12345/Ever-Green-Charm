@@ -1,125 +1,276 @@
 .BasketPage {
     box-sizing: border-box;
     width: 1400px;
-    height: 150vh;
     border-radius: 20px;
     background-color: #fff;
+    font-family: 'Nunito';
 }
 
-h1 {
+h3 {
     padding: 0;
     margin: 0;
 }
 
-.BasketPage__content {
-    padding: 40px 40px;
-
+p {
+    padding: 0;
+    margin: 0;
 }
 
-.BasketPage__Basket--button--cart {
-    outline: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: inline-block;
-    background-color: #842318;
-    border-radius: 30px;
-    padding: 10px 20px;
-    width: 130px;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    border: 1px solid transparent;
+.content {
+    padding: 40px 0;
 }
 
-a {
-    text-decoration: none;
+.content__title {
+    margin: 35px 0;
 }
 
-.BasketPage__Basket--button--cart span {
-    color: #fff;
-    letter-spacing: 0.2px;
-}
-
-.button--black {
-    background-color: #232323;
-}
-
-.BasketPage__logo {
+.content__items {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.BasketPage__logo-wrapper {
-    /* background-color: red; */
-    padding: 30px 50px;
+.content__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.BasketPage__container h1 {
-    /* font-family: 'Nunito'; */
-    font-family: 'Patsy';
-    letter-spacing: 2px;
-    font-size: 25px;
-    padding: 0;
+.container--cart {
+    max-width: 820px;
+    margin: 90px auto;
+}
+
+.container--cart .content__title {
     margin: 0;
 }
 
-.BasketPage__container p {
-    padding: 0;
-    margin: 0;
-    color: rgb(134, 134, 134);
-    font-family: "Nunito";
+.cart__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.BasketPage__Basket--button--cart {
-    outline: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: inline-block;
-    background-color: #842318;
-    border-radius: 30px;
-    padding: 10px 20px;
-    width: 120px;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    border: 1px solid transparent;
-}
-
-.BasketPage__Basket--button--cart:hover {
-    background-color: #fe5f1e;
-}
-
-.BasketPage__Basket--button--delimiter {
-    width: 1px;
-    height: 25px;
-    background-color: rgba(255, 255, 255, 0.25);
-    margin-left: 14px;
-    margin-right: 14px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.BasketPage__Basket--button--cart span {
-    color: #fff;
-}
-
-.BasketPage__Basket--button--cart {
+.cart .content__title {
     display: flex;
     align-items: center;
-    line-height: 23px;
-    padding: 12px 25px;
+    font-size: 32px;
 }
 
-.BasketPage__Basket--button--cart svg {
-    margin-right: 8px;
-    margin-bottom: 1px;
+.cart .Bascket--svg {
+    position: relative;
+    top: -2px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 
-.BasketPage__Basket--button--cart span {
+.cart path {
+    stroke: black;
+    stroke-width: 1.9;
+}
+
+.cart__clear {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sort--span {
+    display: inline-block;
+    margin-left: 7px;
+    color: #b6b6b6;
+    font-size: 18px;
+}
+
+.sort--span,
+.Bascket--svg,
+path {
+    transition: all 0.4 ease-in-out;
+}
+
+.sort--span,
+.Bascket--svg,
+path:hover .Bascket--svg path {
+    stroke: #b6b6b6;
+}
+
+.sort--span {
+    color: #b6b6b6;
+}
+
+.cart__item {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #f6f6f6;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.cart__item-img {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    width: 10%;
+
+}
+
+.cart__item-img img {
+    width: 80px;
+    height: 80px;
+}
+
+.cart__item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.cart__item-info h3 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+}
+
+.cart__item-info p {
+    font-size: 18px;
+    color: #8d8d8d;
+}
+
+
+.cart__item-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 13%;
+}
+
+
+.cart__item-count-minus .Bascket--svg path:first-of-type {
+    display: none;
+}
+
+
+b {
+    font-size: 22px;
+}
+
+
+.cart__item-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+}
+
+.cart__item-price b {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+}
+
+.cart__item-remove {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 4%;
+}
+
+.cart__item-remove .button {
+    border-color: lightgrey;
+}
+
+
+
+.Bascket--svg {
+    transform: rotate(45deg);
+
+}
+
+.Bascket--svg path {
+    fill: #f6f6f6
+}
+
+.button .Bascket--svg {
+    width: 11.5px;
+    height: 11.5px;
+    position: relative;
+}
+
+.button .Bascket--svg:hover,
+.button .Bascket--svg:active {
+    border-color: #f6f6f6;
+    background-color: #f6f6f6;
+}
+
+.cart__bottom {
+    margin: 50px 0;
+}
+
+.cart__bottom-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart__bottom-details .sort--span {
+    font-size: 22px;
+}
+
+.cart__bottom-details .sort--span .sort--span .cart__bottom-details span:last-of-type b {
+    color: red;
+}
+
+.cart__bottom-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.cart__bottom-buttons .go-back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+
+    border-color: #f6f6f6;
+}
+
+.cart__item-count-minus .cart__bottom-buttons .go-back-btn span {
+    color: #f6f6f6;
+    .sort--span-weight: 500;
     font-weight: 600;
-    font-size: 14.6px;
 }
+
+.cart__bottom-buttons .go-back-btn:hover {
+    background-color: #f6f6f6;
+    border-color: #f6f6f6
+}
+
+.cart__bottom-buttons .go-back-btn .sort--span {
+    color: #f6f6f6;
+}
+
+.cart__bottom-buttons .go-back-btn .sort--span .sort--span .cart__bottom-buttons .go-back-btn .Bascket--svg {
+    margin-right: 12px;
+}
+
+.cart__bottom-buttons .go-back-btn .Bascket--svg path {
+    fill: transparent;
+    stroke-width: 2;
+}
+
+.pay-btn {
+    font-size: 16px;
+    font-weight: 600;
+    width: 210px;
+    padding: 16px;
+}
+
+
+.Bascket--svg {
+    transform: rotate(0deg);
+}
+
+cart__bottom-buttons

@@ -1,9 +1,12 @@
 import React from "react";
 import ChTree from "../../../img/ChTree.png";
 import "./Header.css";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const { AllPrice, AllItemsBacket } = useSelector(({ backet }) => backet);
+
   return (
     <>
       <div className="Header__logo-wrapper">
@@ -20,7 +23,7 @@ const Header = () => {
           <div className="Header__Basket">
             <Link to="/Basket">
               <button className="Header__Basket--button--cart">
-                <span>0 ₽</span>
+                <span>{AllPrice} ₽</span>
                 <div className="Header__Basket--button--delimiter"></div>
                 <svg
                   width="18"
@@ -51,6 +54,7 @@ const Header = () => {
                     stroke-linejoin="round"
                   />
                 </svg>
+                <span>{AllItemsBacket}</span>
               </button>
             </Link>
           </div>

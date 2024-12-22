@@ -4,11 +4,22 @@ import PropTypes from "prop-types";
 import RenderProduct from "../RenderProduct/RenderProduct";
 import "./ProductCart.css";
 
-function ProductCart({ imageUrl, name, price, sizes, isRender }) {
-  const [activeItem, setActiveItem] = React.useState(sizes[0]);
+function ProductCart({ id, imageUrl, name, price, sizes, AddBacket }) {
+  const [activeItem, setActiveItem] = React.useState(0);
 
   const onSelectItem = (index) => {
     setActiveItem(index);
+  };
+
+  const ClickAddBacket = () => {
+    const backetObj = {
+      id,
+      name,
+      imageUrl,
+      price,
+      size: sizes[activeItem],
+    };
+    AddBacket(backetObj);
   };
 
   return (
@@ -36,7 +47,10 @@ function ProductCart({ imageUrl, name, price, sizes, isRender }) {
         <div className="product-block__price">
           <span className="product-block__price-text">от {price} BYN</span>
         </div>
-        <button className="button button--outline button--add">
+        <button
+          onClick={ClickAddBacket}
+          className="button button--outline button--add"
+        >
           <span className="button--add-text">Добавить</span>
         </button>
       </div>
@@ -49,6 +63,7 @@ ProductCart.propTypes = {
   imageUrl: PropTypes.string,
   price: PropTypes.number,
   sizes: PropTypes.arrayOf(PropTypes.number),
+  AddBacket: PropTypes.func,
 };
 
 ProductCart.defaultProps = {

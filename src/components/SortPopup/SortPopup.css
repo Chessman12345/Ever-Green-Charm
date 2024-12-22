@@ -12,16 +12,17 @@
     align-items: center;
 }
 
-.sort__label svg {
+.sort__label .sort--svg {
     margin-right: 8px;
     transform: rotate(180deg);
 }
 
-.sort__label svg.rotated {
+.sort__label .sort--svg.rotated {
     transform: rotate(0);
 }
 
-b {
+.sort--b {
+    font-size: 18px;
     font-family: 'Nunito';
     margin-right: 8px;
 }
