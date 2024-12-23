@@ -5,6 +5,10 @@ body {
   background-color: #69231b;
 }
 
+a {
+  color: inherit;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;

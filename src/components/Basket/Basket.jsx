@@ -145,7 +145,7 @@ const Basket = () => {
                     Всего пицц: <b>{AllItemsBacket} шт.</b>
                   </span>
                   <span className="sort--span">
-                    Сумма заказа: <b>{AllPrice} ₽</b>
+                    Сумма заказа: <b>{AllPrice} BYN</b>
                   </span>
                 </div>
                 <div className="cart__bottom-buttons">

@@ -1,7 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-
-import RenderProduct from "../RenderProduct/RenderProduct";
 import "./ProductCart.css";
 
 function ProductCart({
