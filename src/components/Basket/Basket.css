@@ -322,3 +322,7 @@ b {
 b {
     color: black;
 }
+
+.button {
+    cursor: pointer;
+}

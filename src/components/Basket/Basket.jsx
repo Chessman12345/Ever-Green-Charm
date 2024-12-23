@@ -3,10 +3,15 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 import "./Basket.css";
-import BasketHeader from "./BasketHeader/BasketHeader";
+import Header from "../../components/HeaderAndBasketButton/Header";
 import BacketItem from "./BacketItem/BacketItem";
 
-import { clearProduct, removeProduct } from "../../redux/action/backet";
+import {
+  clearProduct,
+  removeProduct,
+  INCProduct,
+  DECProduct,
+} from "../../redux/action/backet";
 
 const Basket = () => {
   const dispatch = useDispatch();
@@ -26,9 +31,17 @@ const Basket = () => {
     dispatch(removeProduct(id));
   };
 
+  const IncrementProduct = (id) => {
+    dispatch(INCProduct(id));
+  };
+
+  const DecrementProduct = (id) => {
+    dispatch(DECProduct(id));
+  };
+
   return (
     <div className="BasketPage">
-      <BasketHeader />
+      <Header />
       <div className="content">
         <div className="container container--cart">
           {AllItemsBacket ? (
@@ -121,6 +134,8 @@ const Basket = () => {
                     totalCount={items[obj.id].items.length}
                     image={obj.imageUrl}
                     remove={remOnClick}
+                    onClickDec={IncrementProduct}
+                    onClickInc={DecrementProduct}
                   />
                 ))}
               </div>
@@ -134,9 +149,9 @@ const Basket = () => {
                   </span>
                 </div>
                 <div className="cart__bottom-buttons">
-                  <button className="exit--button">
-                    <Link to="/Home">Вернуться назад</Link>
-                  </button>
+                  <Link to="/Home">
+                    <button className="exit--button">Вернуться назад</button>
+                  </Link>
                   <div className="button pay-btn">
                     <span className="sort--span">Оплатить сейчас</span>
                   </div>
@@ -146,9 +161,9 @@ const Basket = () => {
           ) : (
             <div className="empty--card">
               <h1>Корзина пуста</h1>
-              <button className="exit--button">
-                <Link to="/Home">Вернуться назад</Link>
-              </button>
+              <Link to="/Home">
+                <button className="exit--button">Вернуться назад</button>
+              </Link>
             </div>
           )}
         </div>

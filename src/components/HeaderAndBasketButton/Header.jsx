@@ -11,15 +11,17 @@ const Header = () => {
     <>
       <div className="Header__logo-wrapper">
         <div className="Heaeder__container">
-          <div className="Header__logo">
-            <div className="Header__lolo-image">
-              <img src={ChTree} />
+          <Link to="/Home">
+            <div className="Header__logo">
+              <div className="Header__lolo-image">
+                <img src={ChTree} />
+              </div>
+              <div className="Header__logo-title">
+                <h1>EverGreenCharm</h1>
+                <p>самый лучший магазин во вселенной</p>
+              </div>
             </div>
-            <div className="Header__logo-title">
-              <h1>EverGreenCharm</h1>
-              <p>самый лучший магазин во вселенной</p>
-            </div>
-          </div>
+          </Link>
           <div className="Header__Basket">
             <Link to="/Basket">
               <button className="Header__Basket--button--cart">

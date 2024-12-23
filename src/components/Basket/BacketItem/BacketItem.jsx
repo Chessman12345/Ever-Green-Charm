@@ -1,8 +1,26 @@
 import React from "react";
 
-function BacketItem({ id, name, size, price, totalCount, image, remove }) {
+function BacketItem({
+  id,
+  name,
+  size,
+  price,
+  totalCount,
+  image,
+  remove,
+  onClickDec,
+  onClickInc,
+}) {
   const OnClickRemoveCard = () => {
     remove(id);
+  };
+
+  const DecrementProduct = () => {
+    onClickDec(id);
+  };
+
+  const IncrementProduct = () => {
+    onClickInc(id);
   };
 
   return (
@@ -15,16 +33,22 @@ function BacketItem({ id, name, size, price, totalCount, image, remove }) {
         <p> {size} см.</p>
       </div>
       <div className="cart__item-count">
-        <div className="button button--outline button--circle cart__item-count-minus">
+        <div
+          className="button button--outline button--circle cart__item-count-minus"
+          onClick={IncrementProduct}
+        >
           -
         </div>
         <b>{totalCount}</b>
-        <div className="button button--outline button--circle cart__item-count-plus">
+        <div
+          className="button button--outline button--circle cart__item-count-plus"
+          onClick={DecrementProduct}
+        >
           +
         </div>
       </div>
       <div className="cart__item-price">
-        <b>{price} ₽</b>
+        <b>{price} BYN</b>
       </div>
       <div className="cart__item-remove">
         <div
